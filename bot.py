@@ -67,11 +67,11 @@ def fetch_ip(proxy):
         return f"Error fetching IP: {e}"
 
 def auto_register(inv_code, proxy):
-    url = "https://api.abn4.top/gw/login/register"
+    url = "https://api.711bet2.com/gw/login/register"
     headers = CaseInsensitiveDict({
         "Accept": "application/json, text/plain, */*",
         "Content-Type": "application/json",
-        "Referer": "https://philuck01.com/",
+        "Referer": "https://711bet2.com/",
         "Sec-Ch-Ua": '"Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"',
         "Sec-Ch-Ua-Mobile": "?0",
         "Sec-Ch-Ua-Platform": '"Windows"',
@@ -118,12 +118,12 @@ def auto_register(inv_code, proxy):
 
 # Function to perform auto recharge
 def auto_recharge(user_id, token, amount, currency, typ, pay_method, proxy):
-    recharge_url = "https://api.philucky000.com/user/recharge"
+    recharge_url = "https://api.711bet2.com/user/recharge"
     headers = CaseInsensitiveDict({
         "Accept": "application/json, text/plain, */*",
         "Authorization": f"{token};{user_id}",
         "Content-Type": "application/json",
-        "Referer": "https://philuck01.com/",
+        "Referer": "https://711bet2.com/",
         "Sec-Ch-Ua": '"Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"',
         "Sec-Ch-Ua-Mobile": "?0",
         "Sec-Ch-Ua-Platform": '"Windows"',
