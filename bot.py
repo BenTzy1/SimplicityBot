@@ -8,6 +8,9 @@ import base64
 import asyncio
 import datetime
 import requests
+from keep_alive import keep_alive
+keep_alive()
+
 
 auth_keys = {}
 with open('keys.txt', 'r') as keys_file:
