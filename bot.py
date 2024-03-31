@@ -23,7 +23,8 @@ def timestamp():
     return datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 
-TOKEN = '7019260893:AAEV8w6fJzvj4HHeOLtnCOywk-StGd20zr4'
+bot = Bot(token='7019260893:AAEV8w6fJzvj4HHeOLtnCOywk-StGd20zr4')
+dp = Dispatcher(bot)
 
 bot = telebot.TeleBot(TOKEN)
 
