@@ -10,7 +10,7 @@ import datetime
 import requests
 
 auth_keys = {}
-with open('bot/keys.txt', 'r') as keys_file:
+with open('keys.txt', 'r') as keys_file:
     for line in keys_file:
         user_id, auth_key, activated = line.strip().split(':')
         auth_keys[int(user_id)] = {'auth_key': auth_key, 'activated': bool(int(activated))}
@@ -158,7 +158,7 @@ def auto_recharge(user_id, token, amount, currency, typ, pay_method, proxy):
         return False, f"Error during auto recharge: {e}"
 
 async def readchat(text, message_id, user, chat_id):
-    filename = 'bot/keys.txt'
+    filename = 'keys.txt'
     accounts = load_accounts(filename)
     skey = "SECRETKEY:" + GetAuthorizationKey(user.username, user.id)
     print(timestamp() + " : " + f"Message Received from {user.first_name} [{user.id}] : {text}")
